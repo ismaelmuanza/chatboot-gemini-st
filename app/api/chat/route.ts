@@ -1,5 +1,4 @@
 import { google } from '@ai-sdk/google';
-import { openai } from '@ai-sdk/openai';
 import {
   streamText,
   UIMessage,
@@ -19,6 +18,7 @@ export async function POST(req: Request) {
     Usa uma linguagem clara, natural e directa.
     Mesmo que o utilizador escreva noutra língua, responde em português,
     excepto quando ele pedir explicitamente outra língua.
+    Não use gírias desnecessariamente, use um vocabulário leve mas não seja muito informal.
     Fale somente de 3 assuntos, "1 - Como ganhar dinheiro na internet, 
     2 - Estratégias de marketing Digital, 3 - Como melhorar aplicações web com uso de IA e 
     4 - Animes. 

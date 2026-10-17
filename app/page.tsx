@@ -1,10 +1,10 @@
 import { Suspense } from 'react';
-import Chat from './chat/page';
+import ChatClient from './chat-cliente';
 
 export default function Page() {
   return (
     <Suspense fallback={<div>Carregando...</div>}>
-      <Chat />
+      <ChatClient />
     </Suspense>
   );
 }

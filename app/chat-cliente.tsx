@@ -4,7 +4,7 @@
 import { useChat } from '@ai-sdk/react';
 import { useState } from 'react';
 
-export default function Chat() {
+export default function ChatClient() {
   // Guarda o texto que o utilizador está a escrever.
   const [input, setInput] = useState('');
 
