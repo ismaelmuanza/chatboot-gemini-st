@@ -11,7 +11,7 @@ export async function POST(req: Request) {
     const { messages }: { messages: UIMessage[] } = await req.json();
     
     const result = streamText({
-        model: google('gemini-3-flash-preview'),
+        model: google('gemini-3.1-flash-lite'),
         messages: await convertToModelMessages(messages),
     system: `
     IDENTIDADE E COMPORTAMENTO
